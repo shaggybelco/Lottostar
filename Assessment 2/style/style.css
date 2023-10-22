@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100dvh;
+}
+
+:root {
+  --background: linear-gradient(180deg, #ffffff 0%, #5a5a5a 100%);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border-color: orangered;
+  background: #7c4a1b60;
+  color: #333;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #3333332a;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.d-result {
+  min-height: 100px;
+  width: 90%;
+  box-shadow: inset #333 0px 5px 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+#playerBag {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#computerBag {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  text-shadow: #333333ab 10px 5px 10px;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.game-name {
+  font-size: 50px;
+  color: #333;
+  text-shadow: orangered 10px 5px 10px;
+}

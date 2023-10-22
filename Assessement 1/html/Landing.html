@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Landing</title>
+</head>
+
+<body>
+    <header>
+        <div class="burner relative">
+            <img src="../assets/banner.svg" class="big-burner" />
+            <img src="../assets/win.svg" class="win-burner absolute" />
+        </div>
+    </header>
+
+    <main>
+        <div class="flex justify-center w-100 flex-col col-gap align-center absolute card-top">
+            <div class="top-card flex-col col-gap">
+                <div class="flex justify-center">
+                    <p class="description fs">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in euismod arcu. Vivamus sit amet
+                        lacinia
+                        purus. Nulla a turpis ipsum. Maecenas ante erat, iaculis ac hendrerit non, accumsan quis neque.
+                        Nullam
+                        et congue quam. Quisque luctus egestas gravida. Quisque maximus, diam non vehicula imperdiet,
+                        nunc
+                        purus
+                        dapibus est, eu efficitur orci dolor eu turpis.
+                    </p>
+                </div>
+                <form class="flex flex-col col-gap num-holder" id="myForm">
+                    <label for="game-name">
+                        <div class="label-container">
+                            <img src="../assets/question-mark.svg" sizes="50px">
+                            <h5 class="label fs">name one lottery game that you can bet on at
+                                <a class="primary underline-none" href="https://www.lottostar.co.za">
+                                    lottostar.co.za
+                                </a>
+                            </h5>
+                            <hr class="w-100">
+                        </div>
+                    </label>
+                    <div class="grid row-gap">
+                        <input class="text-input" placeholder="E.G Lottery" type="text" name="game-name" id="game-name">
+                    </div>
+
+                    <div class="label-container">
+                        <img src="../assets/edit-pencil.svg" sizes="50px">
+                        <h5 class="label">tell us who you are</h5>
+                        <hr class="w-100">
+                    </div>
+                    <div class="grid row-gap">
+                        <input class="text-input uppercase" placeholder="ID Number" type="text" name="id-number"
+                            id="id-number">
+                        <input class="text-input uppercase" placeholder="Name" type="text" name="name" id="name">
+                        <input class="text-input uppercase" placeholder="Surname" type="text" name="Surname"
+                            id="Surname">
+                        <input class="text-input uppercase" placeholder="Email" type="text" name="email" id="email">
+                        <input class="text-input uppercase" placeholder="Mobile number" type="text" name="mobile-number"
+                            id="mobile-number">
+                        <div class="radio uppercase flex text-white align-center gap">
+                            <input type="radio" class="custom-radio" name="terms" id="terms">
+                            <p>accept </p><a class="primary underline-none">T’s & c’s</a>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button class="f-button s-btn-font s-btn-fz s-btn-fw f-btn-p">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="c-card">
+                <div class="flex w-100 row-gap c-content">
+                    <div>
+                        <img src="../assets/charity-name.png" />
+                    </div>
+                    <div class="w-100">
+                        <span class="label big-label flex flex-col s-btn-font gap">
+                            raised for charity
+                            <div class="divider bg-primary"></div>
+                        </span>
+
+                        <div class="num-holder flex justify-end" id="money-container"></div>
+
+                        <div class="flex flex-col align-end gap num-holder">
+                            <span>
+                                <button class="s-btn-font f-button l-btn-p">Learn more</button>
+                            </span>
+                            <p class="text-white uppercase fs">corporate social responsibility Total contributions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="flex justify-center align-center w-100 bg-secondary num-holder ">
+                <p class="description ft-fs">
+                    LottoStar is licensed by the Mpumalanga Economic Regulator. No under18’s. National Responsible
+                    Gambling Programme 0800 006 008.
+                    You are not playing directly in these lotteries but rather betting on the outcome or result of such
+                    lotteries.
+                </p>
+            </footer>
+        </div>
+    </main>
+</body>
+<script src="../js/script.js"></script>
+
+</html>
